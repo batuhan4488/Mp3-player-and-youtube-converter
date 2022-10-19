@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_img"
+    tools:context=".PlayerDowload">
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:text="YOUTUBE CONVERTER"
+      android:textColor="@color/teal_200"
+      android:gravity="center"
+      android:textStyle="bold"
+      android:textSize="28dp">
+
+  </TextView>
+  <EditText
+      android:layout_marginTop="20dp"
+      android:layout_gravity="center"
+      android:layout_width="300dp"
+      android:layout_height="35dp"
+      android:textSize="20dp"
+      android:background="@color/teal_200"
+      android:inputType="textPersonName"
+      android:id="@+id/link"
+      ></EditText>
+
+  <Button
+      android:id="@+id/buton"
+      android:layout_marginTop="15dp"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:text="DOWNLOAD"
+      android:textColor="@color/av_red"></Button>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="23dp"
+      android:layout_marginTop="20dp"
+      android:layout_marginRight="23dp"
+      android:layout_gravity="center"
+      android:id="@+id/musicname"
+      android:textAppearance="@android:style/TextAppearance.WindowTitle"
+      android:textColor="@color/teal_200"
+      android:textSize="20sp" />
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="16dp"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+      <ProgressBar
+          android:id="@+id/prgrBar"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center" />
+
+    </LinearLayout>
+
+  </ScrollView>
+</LinearLayout>
